@@ -17,6 +17,7 @@ public class Test001_AddnewAddress extends BaseTest {
 	public void addAddress() throws EncryptedDocumentException, IOException, InterruptedException {
 		wedriverutilit.scrollIntoView(driver,home.getAddresslink());
 		home.getAddresslink().click();
+		System.out.println("Add");
 		 
 		Account_AddressPage addnewbutton=new Account_AddressPage(driver);
 		addnewbutton.getAddNewbutton().click();
